@@ -3,6 +3,8 @@ arr = [1, 2, 3, 4, 5]
 # Access array:
 print(arr[3])
 # O(1) Time complexity
+# array[0] has an address, each subsequent index in the array is array[0]'s address + 1
+# ex. array[3] = array[0]'s address + 3
 
 # Append:
 arr.append(7)
@@ -40,7 +42,7 @@ print("new_arr", new_arr)
 print("arr", arr)
 
 arr2 = [1, 2, 3, 4, 5]
-# Out-of-Place algorithm
+# Out-of-Place algorithm (also slicing, sorted, reversed)
 # doesn't mutate original array, creates and returns a copy
 # More costly: Time - O(n), Space - O(n)
 def double_nums_out_of_place(array):
